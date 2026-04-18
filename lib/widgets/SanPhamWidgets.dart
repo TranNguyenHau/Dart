@@ -16,10 +16,8 @@ class SanPhamWidgets extends StatelessWidget {
           context: context,
           builder: (context) => Xacnhanwidgets(sanPham: sanPham),
         );
-
         if (confirm == true) {
           MyHomePage.gioHang.add(sanPham);
-
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text("Đã thêm ${sanPham.name} vào giỏ hàng!"),
